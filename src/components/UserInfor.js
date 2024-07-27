@@ -1,5 +1,5 @@
 import React from "react";
-
+import DisplayInfor from "./DisplayInfor";
 class UserInfor extends React.Component {
     state = {
         name : "Huynh Dong",
@@ -34,23 +34,18 @@ class UserInfor extends React.Component {
     render() {
         return (
             <div>
-                <div>
-                My name is:  {this.state.name}
-                </div>
-                <div>
-                I'm {this.state.age} years old
-                </div>
-                <div>
-                I'm from {this.state.address}
-                </div>
                 <form onSubmit={(event) => {this.handleSubmit(event)}}>
-                    <input type="text" value={this.state.name}
+                    <input type="text" placeholder="Huynh Dong"
                      onChange={(event) => {this.handleOnChangeName(event)}}/>
-                    <input type="text" value={this.state.age}
+                    <input type="text" placeholder="21"
                     onChange={(event) => {this.handleOnChangeAge(event)}}/>
-                    <input type="text" value={this.state.address}
+                    <input type="text" placeholder="LA"
                     onChange={(event) => {this.handleOnChangeAddress(event)}}/>
-                    <button>Submit</button>
+                    <button>
+                        Submit
+                    </button>
+                    <hr/>
+                    <DisplayInfor name = {this.state.name} age = {this.state.age} address = {this.state.address}/>
                 </form>
             </div>
         )
