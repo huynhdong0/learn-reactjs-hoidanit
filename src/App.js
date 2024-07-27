@@ -1,30 +1,48 @@
 import logo from './logo.svg';
 import './App.css';
 import MyComponent from './components/MyCompoent';
-function App() {
-  return (
-    <div>
-      My name is HD
-      <MyComponent></MyComponent>
-    </div>
-    
-    // <div className="App">
-    //   <header className="App-header">
-    //     <img src={logo} className="App-logo" alt="logo" />
-    //     <p>
-    //       Edit <code>src/App.js</code> and save to reload.
-    //     </p>
-    //     <a
-    //       className="App-link"
-    //       href="https://reactjs.org"
-    //       target="_blank"
-    //       rel="noopener noreferrer"
-    //     >
-    //       Learn React
-    //     </a>
-    //   </header>
-    // </div>
-  );
+import React from 'react';
+
+class App extends React.Component {
+  state = {
+    name : "Huynh Dong",
+    age: 21,
+    address: "LA",
+  };
+
+
+  render() {
+    return (
+      <div>
+        My name is {this.state.name}
+        I'm {this.state.age} years old
+        I'm from {this.state.address}
+      </div>
+    )
+  };
 }
+
+
+
+// function App() {
+//   return (
+//     <div className="App">
+//       <header className="App-header">
+//         <img src={logo} className="App-logo" alt="logo" />
+//         <p>
+//           Edit <code>src/App.js</code> and save to reload.
+//         </p>
+//         <a
+//           className="App-link"
+//           href="https://reactjs.org"
+//           target="_blank"
+//           rel="noopener noreferrer"
+//         >
+//           Learn React
+//         </a>
+//       </header>
+//     </div>
+//   );
+// }
 
 export default App;
