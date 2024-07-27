@@ -14,9 +14,15 @@ class App extends React.Component {
   render() {
     return (
       <div>
-        My name is {this.state.name}
-        I'm {this.state.age} years old
-        I'm from {this.state.address}
+        <div>
+          My name is {this.state.name}
+        </div>
+        <div>
+          I'm {this.state.age} years old
+        </div>
+        <div>
+          I'm from {this.state.address}
+        </div>
       </div>
     )
   };
