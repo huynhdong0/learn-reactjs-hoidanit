@@ -43,7 +43,7 @@ class AddUserInfor extends React.Component {
 
     render() { 
         return (
-            <div>
+            <div className="user-container">
                 <form onSubmit={(event) => {this.handleAddNewUser(event)}}>
                     <input type="text" placeholder="Huynh Dong"
                      onChange={(event) => {this.handleOnChangeName(event)}}/>

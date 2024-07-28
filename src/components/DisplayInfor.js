@@ -1,5 +1,6 @@
 import React from "react";
 import './DisplayInfo.scss';
+import logo from '../logo.svg';
 class DisplayInfor extends React.Component {
     state = {
         isShowHide: true
@@ -20,6 +21,7 @@ class DisplayInfor extends React.Component {
                         {this.state.isShowHide ? 'Hide' : 'Show'} list users
                     </span>
                 </div>
+                <img src={logo} alt="logo"/>
                 {this.state.isShowHide && 
                     <div>
                     {listUsers.map((user) => {
