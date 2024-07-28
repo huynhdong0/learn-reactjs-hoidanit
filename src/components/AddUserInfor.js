@@ -1,10 +1,14 @@
 import React from "react";
 class AddUserInfor extends React.Component {
-    state = {
-        name : "Huynh Dong",
-        age: 21,
-        address: "LA",
-    };
+
+    constructor(props) {
+        super(props)
+        this.state = {
+            name : "Huynh Dong",
+            age: 21,
+            address: "LA",
+        };
+    }
 
     handleOnChangeName = (event) => {
         this.setState({

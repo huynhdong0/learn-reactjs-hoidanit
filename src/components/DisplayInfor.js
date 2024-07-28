@@ -2,9 +2,13 @@ import React from "react";
 import './DisplayInfo.scss';
 import logo from '../logo.svg';
 class DisplayInfor extends React.Component {
-    state = {
-        isShowHide: true
-    };
+
+    constructor(props) {
+        super(props);
+        this.state = {
+            isShowHide: true
+        };
+    }
 
     handleShowHide = () => {
         this.setState({
