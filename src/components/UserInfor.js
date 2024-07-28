@@ -1,5 +1,4 @@
 import React from "react";
-import DisplayInfor from "./DisplayInfor";
 class UserInfor extends React.Component {
     state = {
         name : "Huynh Dong",
@@ -44,8 +43,6 @@ class UserInfor extends React.Component {
                     <button>
                         Submit
                     </button>
-                    <hr/>
-                    <DisplayInfor name = {this.state.name} age = {this.state.age} address = {this.state.address}/>
                 </form>
             </div>
         )
