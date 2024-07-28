@@ -41,7 +41,7 @@ class AddUserInfor extends React.Component {
         )
     }
 
-    render() {
+    render() { 
         return (
             <div>
                 <form onSubmit={(event) => {this.handleAddNewUser(event)}}>
