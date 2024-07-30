@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import './DisplayInfor.scss';
 
 // class DisplayInfor extends React.Component {
@@ -54,6 +54,18 @@ const DisplayInfor = (props) => {
     const handleShowHideUser = () => {
         setShowHideUser(!isShowHideUser);
     };
+
+    console.log('>>>> call me render');
+
+    useEffect(
+        () => {
+            if (listUsers.length === 0) {
+                alert('List is empty!');
+            }
+            console.log('>>> call me use effect');
+        },
+        [listUsers] // things will be tracked by reactjs hook
+    );
 
     return(
         <div className="display-infor-container">
