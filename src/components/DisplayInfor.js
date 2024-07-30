@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import './DisplayInfor.scss';
 
 // class DisplayInfor extends React.Component {
@@ -49,9 +49,20 @@ import './DisplayInfor.scss';
 
 const DisplayInfor = (props) => {
     const {listUsers, handleDeleteUser} = props; // object
+    const [isShowHideUser, setShowHideUser] = useState(true);
+
+    const handleShowHideUser = () => {
+        setShowHideUser(!isShowHideUser);
+    };
+
     return(
         <div className="display-infor-container">
-            {true && 
+            <div>
+                <span onClick={() => handleShowHideUser()}>
+                    {isShowHideUser ? 'Hide list users' : 'Show list users'}
+                </span>
+            </div>
+            {isShowHideUser && 
                 <div>
                     {listUsers.map((user) => {
                         return (
