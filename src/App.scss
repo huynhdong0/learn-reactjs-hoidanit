@@ -10,6 +10,10 @@ body {
 
 .app-container{
   .header-container{
+    .bg-body-tertiary{
+      background: rgba(0, 0, 0, 0.5); 
+      z-index: 10; 
+    }
     .navbar-nav{
       .nav-link{
         &.active{
@@ -18,4 +22,16 @@ body {
       }
     } 
   }
+  .main-container{
+    .app-context{
+      .homepage-container{
+        video {
+          position: fixed;
+          bottom: 0;
+          width: 100vw;
+        }
+      }
+    }
+  }
 }
+
