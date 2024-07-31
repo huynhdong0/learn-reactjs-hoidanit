@@ -58,7 +58,7 @@ const DisplayInfor = (props) => {
     console.log('>>>> call me render');
 
     useEffect(
-        () => {
+        () => { 
             if (listUsers.length === 0) {
                 alert('List is empty!');
             }
