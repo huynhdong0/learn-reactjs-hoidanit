@@ -1,6 +1,6 @@
 const User = (props) => {
     return (
-        <div>
+        <div className="user-container">
             User component
         </div>
     );  
