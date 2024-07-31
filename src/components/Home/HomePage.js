@@ -8,6 +8,17 @@ const HomePage = (props) => {
                     type="video/mp4"
                 />
             </video>
+            <div className='homepage-content'>
+                <div className='main-title'>There's a better way to ask</div>
+                <div className='title-content'>
+                    You don't want to make a boring from.
+                    And your audience won't answer one.
+                    Create a typeform instead-and make everyone happy.
+                </div>
+                <div className='btn-get'>
+                    <button>Get's started. It's free</button>
+                </div>
+            </div>
         </div>
     );
 }
